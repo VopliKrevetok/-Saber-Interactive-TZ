@@ -1,0 +1,15 @@
+function calculateExpression(expression) {
+  try {
+    const result = eval(expression);
+    return result;
+  } catch (error) {
+    console.error("Ошибка при вычислении выражения:", error);
+    return null;
+  }
+}
+
+const userInput = prompt("Введите математическое выражение:");
+
+const calculatedResult = calculateExpression(userInput);
+
+console.log(`Результат: ${calculatedResult}`);
