@@ -1,0 +1,5 @@
+const expression: string = prompt("Введите математическое выражение:");
+
+const result: number = eval(expression);
+
+console.log(`Результат выражения: ${result}`);
